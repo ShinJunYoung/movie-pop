@@ -58,7 +58,7 @@ function resultRender(movie) {
       className: "movie-card",
       innerHTML: `
       <div class="movie-card__imgcontainer">
-        <a href="/pages/detail.html?id=${movie.imdbID}">
+        <a href="pages/detail.html?id=${movie.imdbID}">
         ${renderMoviePoster(movie.Title, movie.Poster)}
         </a>
       </div>

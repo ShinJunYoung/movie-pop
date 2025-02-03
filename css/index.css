@@ -694,7 +694,7 @@ hr {
   right: 1rem;
   transition: all 0.2s;
   z-index: 10;
-  background: url("images/ico_search.svg") no-repeat;
+  background: url("../images/ico_search.svg") no-repeat;
   background-size: cover;
 }
 
@@ -704,7 +704,7 @@ hr {
   padding-top: 0.5rem;
   display: block;
   z-index: 100;
-  background: url("images/ico_cancel.svg") no-repeat;
+  background: url("../images/ico_cancel.svg") no-repeat;
   background-size: cover;
 }
 
@@ -744,7 +744,7 @@ hr {
   height: 3rem;
   color: #ffffff;
   padding-bottom: 2rem;
-  background-image: url("images/ico_search.svg");
+  background-image: url("../images/ico_search.svg");
   background-size: cover;
   position: absolute;
   color: #aaaaaa;
@@ -785,12 +785,12 @@ hr {
   display: inline-block;
   width: 3rem;
   height: 3rem;
-  background-image: url("images/ico_youtube.svg");
+  background-image: url("../images/ico_youtube.svg");
   background-size: cover;
   background-position: center;
 }
 .light .footer-link__icon {
-  background-image: url("images/ico_youtube_lightmode.svg");
+  background-image: url("../images/ico_youtube_lightmode.svg");
   width: 3rem;
 }
 
@@ -798,11 +798,11 @@ hr {
   display: inline-block;
   width: 3rem;
   height: 3rem;
-  background-image: url("images/ico_github.svg");
+  background-image: url("../images/ico_github.svg");
   background-size: cover;
 }
 .light .footer-link__icon2 {
-  background-image: url("images/ico_github_lightmode.svg");
+  background-image: url("../images/ico_github_lightmode.svg");
   width: 3rem;
 }
 
