@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie POP</title>
-    <base href="https://shinjunyoung.github.io/movie-pop/" />
+    <!-- <base href="https://shinjunyoung.github.io/movie-pop/" /> -->
     <link rel="icon" href="/images/favicon.png" />
     <link rel="stylesheet" href="/css/index.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
@@ -82,6 +82,14 @@
       </section>
     </main>
     <footer class="footer__wrapper"></footer>
+    <script>
+      // 현재 URL에서 GitHub Pages의 Repo 이름을 추출하여 <base> 태그 설정
+      const base = document.createElement("base");
+      base.href = window.location.origin.includes("github.io")
+        ? window.location.origin + "/movie-pop/"
+        : "/";
+      document.head.appendChild(base);
+    </script>
     <script src="/js/lightMode.js"></script>
     <script src="/js/topBtn.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
