@@ -120,7 +120,7 @@ const renderGeners = (genres) => {
 };
 
 try {
-  showLoading();
+  showLoading("../assets/loading.json");
   movie = await fetchMoviesById(id);
   if (!movie) {
     throw new Error(

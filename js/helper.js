@@ -5,20 +5,22 @@ export const $ = (selector) => {
 };
 
 // 로딩 애니메이션 로드
-export const setLoading = bodymovin.loadAnimation({
-  container: $(".loading"), // 필수, 애니메이션 들어가는 곳
-  path: "assets/loading.json", // 필수(url 또는 json파일 다운로드 경로)
-  renderer: "svg", // 필수
-  loop: true, // 반복재생
-  autoplay: false, // 자동재생
-});
+export const setLoading = (path) => {
+  return bodymovin.loadAnimation({
+    container: $(".loading"), // 필수, 애니메이션 들어가는 곳
+    path: path, // 필수(url 또는 json파일 다운로드 경로)
+    renderer: "svg", // 필수
+    loop: true, // 반복재생
+    autoplay: false, // 자동재생
+  });
+};
 
 // 로딩 시작
-export const showLoading = () => setLoading.play();
+export const showLoading = (path) => setLoading(path).play();
 
 // 로딩 끝
-export const finishLoading = () => {
-  setLoading.destroy();
+export const finishLoading = (path) => {
+  setLoading(path).destroy();
   $(".loading").style.display = "none";
 };
 
@@ -44,7 +46,7 @@ export function renderMovieGrid(data, container) {
     .join("");
 }
 
-export const showMask = (ele) => {
+export const showMask = (ele, path) => {
   const windowWidth = window.document.body.clientWidth;
   const windowHeight = window.document.body.clientHeight;
 
@@ -52,7 +54,7 @@ export const showMask = (ele) => {
   ele.style.height = `${windowHeight}px`;
   ele.style.display = "flex";
 
-  showLoading();
+  showLoading(path);
 };
 
 export const hideMask = (ele) => {

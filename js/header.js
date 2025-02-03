@@ -52,7 +52,7 @@ export const headerScript = () => {
     //실행순서 바꾸지 말기.
     event.preventDefault();
     console.log("start...");
-    showMask(loadingWrapper);
+    showMask(loadingWrapper, "assets/loading.json");
     let jsonObj = await getDataFromApi(headerInput.value);
     saveStorage(jsonObj, headerInput.value);
     setTimeout(() => {
