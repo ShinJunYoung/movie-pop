@@ -6,7 +6,7 @@ import {
   getDataFromApi,
   saveStorage,
 } from "./header.js";
-import { $, showLoading } from "./helper.js";
+import { $ } from "./helper.js";
 import { loadFooter } from "./loadFooter.js";
 import renderMoviePoster from "./moviePoster.js";
 import { renderMovieGrid } from "./helper.js";
@@ -75,7 +75,7 @@ function resultRender(movie) {
 
 async function fetchData() {
   try {
-    const response = await fetch("/data/movieData.json"); // 미리 저장한 json 파일 fetch
+    const response = await fetch("../data/movieData.json"); // 미리 저장한 json 파일 fetch
     const data = await response.json();
 
     const recommendMovies = data.filter(

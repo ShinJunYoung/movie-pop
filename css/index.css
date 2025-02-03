@@ -217,16 +217,16 @@ body {
   right: 9.7rem;
   width: 3rem;
   aspect-ratio: 1;
-  background: url("/images/ico_backspace.svg") no-repeat;
+  background: url("./images/ico_backspace.svg") no-repeat;
 }
 .btn-goback:hover {
-  background: url("/images/ico_backspace_primary.svg") no-repeat;
+  background: url("./images/ico_backspace_primary.svg") no-repeat;
 }
 .light .btn-goback {
-  background: url("/images/ico_backspace_black.svg") no-repeat;
+  background: url("./images/ico_backspace_black.svg") no-repeat;
 }
 .light .btn-goback:hover {
-  background: url("/images/ico_backspace_primary.svg") no-repeat;
+  background: url("./images/ico_backspace_primary.svg") no-repeat;
 }
 
 .btn-bookmark {
@@ -239,33 +239,33 @@ body {
 .btn-bookmark:hover {
   width: 3rem;
   aspect-ratio: 1;
-  background: url("/images/ico_bookmark_primary.svg") no-repeat center;
+  background: url("./images/ico_bookmark_primary.svg") no-repeat center;
   background-size: cover;
 }
 
 .bookmarked {
   width: 3rem;
   aspect-ratio: 1;
-  background: url("/images/ico_bookmark_filled.svg") no-repeat center;
+  background: url("./images/ico_bookmark_filled.svg") no-repeat center;
   background-size: cover;
 }
 
 .not-bookmarked {
   width: 3rem;
   aspect-ratio: 1;
-  background: url("/images/ico_bookmark.svg") no-repeat center;
+  background: url("./images/ico_bookmark.svg") no-repeat center;
   background-size: cover;
 }
 .light .not-bookmarked {
   width: 3rem;
   aspect-ratio: 1;
-  background: url("/images/ico_bookmark_black.svg") no-repeat center;
+  background: url("./images/ico_bookmark_black.svg") no-repeat center;
   background-size: cover;
 }
 .light .not-bookmarked:hover {
   width: 3rem;
   aspect-ratio: 1;
-  background: url("/images/ico_bookmark_primary.svg") no-repeat center;
+  background: url("./images/ico_bookmark_primary.svg") no-repeat center;
   background-size: cover;
 }
 
@@ -275,16 +275,16 @@ body {
   right: 22rem;
   width: 3rem;
   aspect-ratio: 1;
-  background: url("/images/ico_share.svg") no-repeat;
+  background: url("./images/ico_share.svg") no-repeat;
 }
 .btn-share:hover {
-  background: url("/images/ico_share_primary.svg") no-repeat;
+  background: url("./images/ico_share_primary.svg") no-repeat;
 }
 .light .btn-share {
-  background: url("/images/ico_share_black.svg") no-repeat;
+  background: url("./images/ico_share_black.svg") no-repeat;
 }
 .light .btn-share:hover {
-  background: url("/images/ico_share_primary.svg") no-repeat;
+  background: url("./images/ico_share_primary.svg") no-repeat;
 }
 
 .detail__genre-area {
