@@ -48,7 +48,7 @@ function renderRandomMovie(movie) {
   // DOM 업데이트
   posterImg.src = movie.Poster;
   posterImg.alt = `${movie.Title} Poster`;
-  detailLink.href = `../pages/detail.html?id=${movie.imdbID}`;
+  detailLink.href = `/pages/detail.html?id=${movie.imdbID}`;
 }
 
 function renderMovies(data) {
