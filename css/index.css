@@ -836,7 +836,7 @@ hr {
   opacity: 0.6;
 }
 .light .slide__container {
-  background: url("/images/bg-light.jpg");
+  background: url("images/bg-light.jpg");
 }
 .light .slide__container::after {
   content: "";

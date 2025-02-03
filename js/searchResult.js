@@ -75,7 +75,7 @@ function resultRender(movie) {
 
 async function fetchData() {
   try {
-    const response = await fetch("../data/movieData.json"); // 미리 저장한 json 파일 fetch
+    const response = await fetch("data/movieData.json"); // 미리 저장한 json 파일 fetch
     const data = await response.json();
 
     const recommendMovies = data.filter(
@@ -95,7 +95,7 @@ searchbarForm.addEventListener("submit", async (e) => {
   let jsonObj = await getDataFromApi(resultInput.value);
   saveStorage(jsonObj, resultInput.value);
   hideMask(loadingWrapper);
-  location.href = "/pages/searchResult.html";
+  location.href = "pages/searchResult.html";
 });
 
 resultInput.addEventListener("focus", () => {

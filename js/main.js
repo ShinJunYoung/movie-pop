@@ -17,7 +17,7 @@ loadFooter();
 
 async function fetchData() {
   try {
-    const response = await fetch("../data/movieData.json");
+    const response = await fetch("data/movieData.json");
     const data = await response.json();
 
     const randomMovie = getRandomMovie(data);
